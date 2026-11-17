@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void printnum(int n)
+{
+    printf("%d\n", n);
+}
+
+int main(void)
+{
+    int number;
+
+    printf("Enter an integer: ");
+
+    if (scanf("%d", &number) != 1)
+    {
+        printf("Invalid input.\n");
+        return 1;
+    }
+
+    printnum(number);
+
+    return 0;
+}
